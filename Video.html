@@ -6,27 +6,46 @@
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link  rel="stylesheet" href="css/chosen.css"  type="text/css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <script src="js/chosen.jquery.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/placeholders.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
     <title>Video</title>
 </head>
 <body>
+<!--[if lt IE 9]>
+<style>
+    .wrapper {
+        display: none;
+    }
+
+    body {
+        background: gray
+    }
+</style>
+<div style='text-align:center;'>
+    <br><br><a href="#" class="logo" style="float:none;"><img src="img/logoCompany.png" alt=""></a><br><br><br><br><br>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"
+       style="color:#fff; font-size:18px;font-weight:bold; text-decoration:underline;">
+        You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.
+    </a>
+</div>
+<![endif]-->
 <div class="wrapper">
     <header>
         <div class="header-up">
             <div class="container">
-                <a class="logo" href="#"><img src="img/logoCompany.png" alt=""/></a>
+                <a class="logo" href="index.html"><img src="img/logoCompany.png" alt=""/></a>
             </div>
         </div>
         <div class="header-menu black-line">
             <div class="container">
                 <ul>
                     <li class="pages"><a href="explore.html">Explore</a></li>
-                    <li class="pages"><a href="PhotoNetwork.html">PhotoNetwork</a></li>
+                    <li class="pages"><a href="photonetwork.html">PhotoNetwork</a></li>
                     <li class="pages"><a href="shop.html">Shop</a></li>
-                    <li class="pages"><a href="Contacts.html">Contact</a></li>
-                    <li class="pages active"><a href="Video.html">Video</a></li>
+                    <li class="pages"><a href="contacts.html">Contact</a></li>
+                    <li class="pages active"><a href="video.html">Video</a></li>
                 </ul>
             </div>
         </div>
@@ -51,32 +70,22 @@
                 </ul>
             </div>
             <div class="newsletter">
-                <h4>Newsletter</h4>
-                <div>
-                    <input class="name" type="text" placeholder="Name"/>
-                    <input class="name" type="text" placeholder="Surname"/>
-                </div>
-                <input type="text" placeholder="Email"/>
-                <input type="text" placeholder="Type the text"/>
+                <h4>Заказать</h4>
+                <input type="text" placeholder="Имя"/>
+                <input type="text" placeholder="Телефон"/>
+                <input type="text" placeholder="Сообщение"/>
 
                 <div class="sign-up">
 
-                    <button>ИДТИ!</button>
+                    <button>ОТПРАВИТЬ</button>
                 </div>
             </div>
             <div class="social">
                 <a href="#"><img src="img/vk.png" alt=""/>VKontakte</a>
-                <br/>
                 <a href="#"><img src="img/instagramm.png" alt=""/>Instagram</a>
             </div>
         </div>
     </footer>
 </div>
 </body>
-<script>
-    $( document ).ready(function() {
-        $(".chosen-select").chosen();
-        $(".chosen-select").chosen({disable_search_threshold: 10});
-    });
-</script>
 </html>

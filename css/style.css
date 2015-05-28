@@ -1,9 +1,35 @@
-@font-face{
-    font-family: 'Arial';
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/MuseoCyrl-500.eot');
+    src: url('../fonts/MuseoCyrl-500.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoCyrl-500.woff') format('woff'), url('../fonts/MuseoCyrl-500.ttf') format('truetype'), url('../fonts/MuseoCyrl-500.svg#Museo') format('svg');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/HelveticaNeueLTStd-Th.eot');
+    src: url('../fonts/HelveticaNeueLTStd-Th.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTStd-Th.woff') format('woff'), url('../fonts/HelveticaNeueLTStd-Th.ttf') format('truetype'), url('../fonts/HelveticaNeueLTStd-Th.svg#helveticaLight') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lucida';
+    src: url('../fonts/LucidaGrande.eot');
+    src: url('../fonts/LucidaGrande.eot?#iefix') format('embedded-opentype'), url('../fonts/LucidaGrande.woff') format('woff'), url('../fonts/LucidaGrande.ttf') format('truetype'), url('../fonts/LucidaGrande.svg#Lucida') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MuseoLight';
+    src: url('../fonts/Museo-300.eot');
+    src: url('../fonts/Museo-300.eot?#iefix') format('embedded-opentype'), url('../fonts/Museo-300.woff') format('woff'), url('../fonts/Museo-300.ttf') format('truetype'), url('../fonts/Museo-300.svg#MuseoLight') format('svg');
+    font-style: normal;
+    font-weight: normal;
 }
 
 body {
-    font-family: 'Arial';
+    font-family: 'Museo';
     font-size: 24px;
     width: 100%;
 
@@ -134,6 +160,7 @@ li.pages {
     padding: 0 1.6% 0 1.6%;
     color: #fff;
     line-height: 30px;
+    font-family: MuseoLight;
 }
 
 li.pages.active>a {
@@ -164,7 +191,7 @@ li.pages:hover a{
 
 p.red-text {
     color: #d37565;
-    font: 34px museo268, Arial;
+    font: 34px MuseoLight, Arial;
 }
 
 p.white-text {
@@ -236,7 +263,7 @@ img {
 .left>h3, .right>h3, .wide>h3, .center-description>h3 {
     margin: 160px 0 0 15%;
     font-size: 50px;
-    font-family: museo500,Arial;
+    font-family: Museo;
     font-weight: 400;
     line-height: 47px;
 }
@@ -244,7 +271,7 @@ img {
 .left>p, .right>p, .wide>p, .center-description>p {
     margin: 10px 0 0 15%;
     font-size: 18px;
-    font-family: helvetica_neue_lt_std45_light,Helvetica,Arial,sans-serif;
+    font-family: 'Helvetica',Arial,sans-serif;
 }
 
 h3.small-margin {
@@ -429,7 +456,7 @@ footer>.container>div {
 footer a {
     text-decoration: none;
     color: #666;
-    font-family: museo500,Arial;
+    font-family: Museo;
     font-size: 18px;
 }
 
@@ -503,7 +530,6 @@ footer button {
     /*display: inline-block;*/
     float: right;
     margin-top: 10px;
-    width: 60px;
     height: 50px;
     color: #fff;
     background-color: #469871;
@@ -660,7 +686,7 @@ img.only-img {
     position: relative;
 }
 
-.explore.main>div>h3, .explore.main>div>p {
+.main-wide>h3, .main-wide>p {
     margin-left: 5%;
 
 }
@@ -670,6 +696,7 @@ img.only-img {
     padding-left: 25px;
     font-size: 15px;
     color: #4a4a4a;
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
 }
 
 .explore.main>div.wide>div {
@@ -691,7 +718,9 @@ div.desc-specs {
 }
 
 h4 {
-    color: #4a4a4a;
+    color: #666;
+    font-family: MuseoLight;
+    font-weight: lighter;
 }
 
 .photo-network>.banner>.text {
@@ -804,14 +833,14 @@ button:focus {
 
 footer .social>a>img {
     width: 30px;
-
+    vertical-align: top;
 }
 
 footer .social>a{
     line-height: 30px;
     vertical-align: top;
     display: block;
-    margin-top: -20px;
+    margin-top: 10px;
 }
 
 footer .social>a:first-child {
@@ -820,4 +849,8 @@ footer .social>a:first-child {
 
 .name-form{
     font-size: 16px;
+}
+
+iframe {
+    vertical-align: top;
 }
